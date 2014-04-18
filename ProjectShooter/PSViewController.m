@@ -7,6 +7,7 @@
 //
 
 #import "PSViewController.h"
+#import "PSGameManager.h"
 
 @interface PSViewController ()
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

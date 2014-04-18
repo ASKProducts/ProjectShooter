@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5723849F18DDCE31000CA9EB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5723849E18DDCE31000CA9EB /* QuartzCore.framework */; };
+		572384A118DE58CF000CA9EB /* TankSpriteSheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 572384A018DE58CF000CA9EB /* TankSpriteSheet.png */; };
+		572384A318DE5CC3000CA9EB /* Tank.png in Resources */ = {isa = PBXBuildFile; fileRef = 572384A218DE5CC3000CA9EB /* Tank.png */; };
+		577162A019001FD800CF2E82 /* left_arrow_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5771629C19001FD800CF2E82 /* left_arrow_pressed.png */; };
+		577162A119001FD800CF2E82 /* right_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5771629D19001FD800CF2E82 /* right_arrow.png */; };
+		577162A219001FD800CF2E82 /* right_arrow_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5771629E19001FD800CF2E82 /* right_arrow_pressed.png */; };
+		577162A319001FD800CF2E82 /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 5771629F19001FD800CF2E82 /* left_arrow.png */; };
+		577162A619003F8300CF2E82 /* PSSwipeZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 577162A519003F8300CF2E82 /* PSSwipeZone.m */; };
 		578D3F5F18DB3066000FC8C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578D3F5E18DB3066000FC8C1 /* Foundation.framework */; };
 		578D3F6118DB3066000FC8C1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578D3F6018DB3066000FC8C1 /* CoreGraphics.framework */; };
 		578D3F6318DB3066000FC8C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578D3F6218DB3066000FC8C1 /* UIKit.framework */; };
@@ -22,6 +30,21 @@
 		578D3F8318DB3066000FC8C1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 578D3F6218DB3066000FC8C1 /* UIKit.framework */; };
 		578D3F8B18DB3066000FC8C1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 578D3F8918DB3066000FC8C1 /* InfoPlist.strings */; };
 		578D3F8D18DB3066000FC8C1 /* ProjectShooterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 578D3F8C18DB3066000FC8C1 /* ProjectShooterTests.m */; };
+		578D3F9918DB30B4000FC8C1 /* PSGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 578D3F9818DB30B4000FC8C1 /* PSGameViewController.m */; };
+		578D3F9C18DB30CC000FC8C1 /* PSGameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 578D3F9B18DB30CC000FC8C1 /* PSGameManager.m */; };
+		578D3F9F18DB6DD2000FC8C1 /* PSScreenElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 578D3F9E18DB6DD2000FC8C1 /* PSScreenElement.m */; };
+		578D3FA318DB6E24000FC8C1 /* PSPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 578D3FA218DB6E24000FC8C1 /* PSPlayer.m */; };
+		578D3FA618DB6E66000FC8C1 /* PSShooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 578D3FA518DB6E66000FC8C1 /* PSShooter.m */; };
+		578D3FA918DB6E8E000FC8C1 /* PSHelicopter.m in Sources */ = {isa = PBXBuildFile; fileRef = 578D3FA818DB6E8E000FC8C1 /* PSHelicopter.m */; };
+		578D3FAE18DB6F7B000FC8C1 /* PSDropper.m in Sources */ = {isa = PBXBuildFile; fileRef = 578D3FAD18DB6F7B000FC8C1 /* PSDropper.m */; };
+		578D3FB118DB702E000FC8C1 /* PSBomb.m in Sources */ = {isa = PBXBuildFile; fileRef = 578D3FB018DB702E000FC8C1 /* PSBomb.m */; };
+		578D3FB418DB71BC000FC8C1 /* PSBoulder.m in Sources */ = {isa = PBXBuildFile; fileRef = 578D3FB318DB71BC000FC8C1 /* PSBoulder.m */; };
+		578D3FB718DB73A4000FC8C1 /* PSBonus.m in Sources */ = {isa = PBXBuildFile; fileRef = 578D3FB618DB73A4000FC8C1 /* PSBonus.m */; };
+		578D3FBB18DD2250000FC8C1 /* Helicopter-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 578D3FBA18DD2250000FC8C1 /* Helicopter-1.png */; };
+		578D3FBD18DD2F95000FC8C1 /* Definitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 578D3FBC18DD2F95000FC8C1 /* Definitions.m */; };
+		57D1060318FE2ABA00FB8AEF /* PSTouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D1060218FE2ABA00FB8AEF /* PSTouch.m */; };
+		57D1060618FFF8ED00FB8AEF /* PSTapZone.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D1060518FFF8ED00FB8AEF /* PSTapZone.m */; };
+		57D1060A19000C2700FB8AEF /* PSButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 57D1060919000C2700FB8AEF /* PSButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +58,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5723849E18DDCE31000CA9EB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		572384A018DE58CF000CA9EB /* TankSpriteSheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TankSpriteSheet.png; sourceTree = "<group>"; };
+		572384A218DE5CC3000CA9EB /* Tank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tank.png; sourceTree = "<group>"; };
+		5771629C19001FD800CF2E82 /* left_arrow_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_arrow_pressed.png; sourceTree = "<group>"; };
+		5771629D19001FD800CF2E82 /* right_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow.png; sourceTree = "<group>"; };
+		5771629E19001FD800CF2E82 /* right_arrow_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right_arrow_pressed.png; sourceTree = "<group>"; };
+		5771629F19001FD800CF2E82 /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_arrow.png; sourceTree = "<group>"; };
+		577162A419003F8300CF2E82 /* PSSwipeZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSSwipeZone.h; sourceTree = "<group>"; };
+		577162A519003F8300CF2E82 /* PSSwipeZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSSwipeZone.m; sourceTree = "<group>"; };
 		578D3F5B18DB3066000FC8C1 /* ProjectShooter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectShooter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		578D3F5E18DB3066000FC8C1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		578D3F6018DB3066000FC8C1 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +87,35 @@
 		578D3F8818DB3066000FC8C1 /* ProjectShooterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ProjectShooterTests-Info.plist"; sourceTree = "<group>"; };
 		578D3F8A18DB3066000FC8C1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		578D3F8C18DB3066000FC8C1 /* ProjectShooterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectShooterTests.m; sourceTree = "<group>"; };
+		578D3F9718DB30B4000FC8C1 /* PSGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSGameViewController.h; sourceTree = "<group>"; };
+		578D3F9818DB30B4000FC8C1 /* PSGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSGameViewController.m; sourceTree = "<group>"; };
+		578D3F9A18DB30CC000FC8C1 /* PSGameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSGameManager.h; sourceTree = "<group>"; };
+		578D3F9B18DB30CC000FC8C1 /* PSGameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSGameManager.m; sourceTree = "<group>"; };
+		578D3F9D18DB6DD2000FC8C1 /* PSScreenElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSScreenElement.h; sourceTree = "<group>"; };
+		578D3F9E18DB6DD2000FC8C1 /* PSScreenElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSScreenElement.m; sourceTree = "<group>"; };
+		578D3FA118DB6E24000FC8C1 /* PSPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSPlayer.h; sourceTree = "<group>"; };
+		578D3FA218DB6E24000FC8C1 /* PSPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSPlayer.m; sourceTree = "<group>"; };
+		578D3FA418DB6E66000FC8C1 /* PSShooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSShooter.h; sourceTree = "<group>"; };
+		578D3FA518DB6E66000FC8C1 /* PSShooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSShooter.m; sourceTree = "<group>"; };
+		578D3FA718DB6E8E000FC8C1 /* PSHelicopter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSHelicopter.h; sourceTree = "<group>"; };
+		578D3FA818DB6E8E000FC8C1 /* PSHelicopter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSHelicopter.m; sourceTree = "<group>"; };
+		578D3FAC18DB6F7B000FC8C1 /* PSDropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSDropper.h; sourceTree = "<group>"; };
+		578D3FAD18DB6F7B000FC8C1 /* PSDropper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSDropper.m; sourceTree = "<group>"; };
+		578D3FAF18DB702E000FC8C1 /* PSBomb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSBomb.h; sourceTree = "<group>"; };
+		578D3FB018DB702E000FC8C1 /* PSBomb.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSBomb.m; sourceTree = "<group>"; };
+		578D3FB218DB71BC000FC8C1 /* PSBoulder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSBoulder.h; sourceTree = "<group>"; };
+		578D3FB318DB71BC000FC8C1 /* PSBoulder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSBoulder.m; sourceTree = "<group>"; };
+		578D3FB518DB73A4000FC8C1 /* PSBonus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSBonus.h; sourceTree = "<group>"; };
+		578D3FB618DB73A4000FC8C1 /* PSBonus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSBonus.m; sourceTree = "<group>"; };
+		578D3FB818DBB91D000FC8C1 /* Definitions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Definitions.h; sourceTree = "<group>"; };
+		578D3FBA18DD2250000FC8C1 /* Helicopter-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Helicopter-1.png"; sourceTree = "<group>"; };
+		578D3FBC18DD2F95000FC8C1 /* Definitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Definitions.m; sourceTree = "<group>"; };
+		57D1060118FE2ABA00FB8AEF /* PSTouch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTouch.h; sourceTree = "<group>"; };
+		57D1060218FE2ABA00FB8AEF /* PSTouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTouch.m; sourceTree = "<group>"; };
+		57D1060418FFF8ED00FB8AEF /* PSTapZone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSTapZone.h; sourceTree = "<group>"; };
+		57D1060518FFF8ED00FB8AEF /* PSTapZone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSTapZone.m; sourceTree = "<group>"; };
+		57D1060819000C2700FB8AEF /* PSButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PSButton.h; sourceTree = "<group>"; };
+		57D1060919000C2700FB8AEF /* PSButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PSButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5723849F18DDCE31000CA9EB /* QuartzCore.framework in Frameworks */,
 				578D3F6118DB3066000FC8C1 /* CoreGraphics.framework in Frameworks */,
 				578D3F6318DB3066000FC8C1 /* UIKit.framework in Frameworks */,
 				578D3F5F18DB3066000FC8C1 /* Foundation.framework in Frameworks */,
@@ -103,6 +165,7 @@
 		578D3F5D18DB3066000FC8C1 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5723849E18DDCE31000CA9EB /* QuartzCore.framework */,
 				578D3F5E18DB3066000FC8C1 /* Foundation.framework */,
 				578D3F6018DB3066000FC8C1 /* CoreGraphics.framework */,
 				578D3F6218DB3066000FC8C1 /* UIKit.framework */,
@@ -114,6 +177,8 @@
 		578D3F6418DB3066000FC8C1 /* ProjectShooter */ = {
 			isa = PBXGroup;
 			children = (
+				578D3FB918DD222D000FC8C1 /* Images */,
+				578D3F9618DB308C000FC8C1 /* Game Engine */,
 				578D3F6D18DB3066000FC8C1 /* PSAppDelegate.h */,
 				578D3F6E18DB3066000FC8C1 /* PSAppDelegate.m */,
 				578D3F7018DB3066000FC8C1 /* Main_iPhone.storyboard */,
@@ -153,6 +218,89 @@
 				578D3F8918DB3066000FC8C1 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		578D3F9618DB308C000FC8C1 /* Game Engine */ = {
+			isa = PBXGroup;
+			children = (
+				578D3FB818DBB91D000FC8C1 /* Definitions.h */,
+				578D3FBC18DD2F95000FC8C1 /* Definitions.m */,
+				578D3F9718DB30B4000FC8C1 /* PSGameViewController.h */,
+				578D3F9818DB30B4000FC8C1 /* PSGameViewController.m */,
+				578D3F9A18DB30CC000FC8C1 /* PSGameManager.h */,
+				578D3F9B18DB30CC000FC8C1 /* PSGameManager.m */,
+				578D3FA018DB6DF4000FC8C1 /* ScreenElement */,
+			);
+			name = "Game Engine";
+			sourceTree = "<group>";
+		};
+		578D3FA018DB6DF4000FC8C1 /* ScreenElement */ = {
+			isa = PBXGroup;
+			children = (
+				578D3F9D18DB6DD2000FC8C1 /* PSScreenElement.h */,
+				578D3F9E18DB6DD2000FC8C1 /* PSScreenElement.m */,
+				57D106071900047900FB8AEF /* Touch Elements */,
+				578D3FAA18DB6F32000FC8C1 /* Player */,
+				578D3FAB18DB6F52000FC8C1 /* Droppers */,
+			);
+			name = ScreenElement;
+			sourceTree = "<group>";
+		};
+		578D3FAA18DB6F32000FC8C1 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				578D3FA118DB6E24000FC8C1 /* PSPlayer.h */,
+				578D3FA218DB6E24000FC8C1 /* PSPlayer.m */,
+				578D3FA418DB6E66000FC8C1 /* PSShooter.h */,
+				578D3FA518DB6E66000FC8C1 /* PSShooter.m */,
+				578D3FA718DB6E8E000FC8C1 /* PSHelicopter.h */,
+				578D3FA818DB6E8E000FC8C1 /* PSHelicopter.m */,
+			);
+			name = Player;
+			sourceTree = "<group>";
+		};
+		578D3FAB18DB6F52000FC8C1 /* Droppers */ = {
+			isa = PBXGroup;
+			children = (
+				578D3FAC18DB6F7B000FC8C1 /* PSDropper.h */,
+				578D3FAD18DB6F7B000FC8C1 /* PSDropper.m */,
+				578D3FAF18DB702E000FC8C1 /* PSBomb.h */,
+				578D3FB018DB702E000FC8C1 /* PSBomb.m */,
+				578D3FB218DB71BC000FC8C1 /* PSBoulder.h */,
+				578D3FB318DB71BC000FC8C1 /* PSBoulder.m */,
+				578D3FB518DB73A4000FC8C1 /* PSBonus.h */,
+				578D3FB618DB73A4000FC8C1 /* PSBonus.m */,
+			);
+			name = Droppers;
+			sourceTree = "<group>";
+		};
+		578D3FB918DD222D000FC8C1 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				578D3FBA18DD2250000FC8C1 /* Helicopter-1.png */,
+				572384A018DE58CF000CA9EB /* TankSpriteSheet.png */,
+				572384A218DE5CC3000CA9EB /* Tank.png */,
+				5771629C19001FD800CF2E82 /* left_arrow_pressed.png */,
+				5771629D19001FD800CF2E82 /* right_arrow.png */,
+				5771629E19001FD800CF2E82 /* right_arrow_pressed.png */,
+				5771629F19001FD800CF2E82 /* left_arrow.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		57D106071900047900FB8AEF /* Touch Elements */ = {
+			isa = PBXGroup;
+			children = (
+				57D1060118FE2ABA00FB8AEF /* PSTouch.h */,
+				57D1060218FE2ABA00FB8AEF /* PSTouch.m */,
+				57D1060418FFF8ED00FB8AEF /* PSTapZone.h */,
+				57D1060518FFF8ED00FB8AEF /* PSTapZone.m */,
+				577162A419003F8300CF2E82 /* PSSwipeZone.h */,
+				577162A519003F8300CF2E82 /* PSSwipeZone.m */,
+				57D1060819000C2700FB8AEF /* PSButton.h */,
+				57D1060919000C2700FB8AEF /* PSButton.m */,
+			);
+			name = "Touch Elements";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +382,14 @@
 			files = (
 				578D3F7518DB3066000FC8C1 /* Main_iPad.storyboard in Resources */,
 				578D3F7A18DB3066000FC8C1 /* Images.xcassets in Resources */,
+				577162A119001FD800CF2E82 /* right_arrow.png in Resources */,
+				572384A318DE5CC3000CA9EB /* Tank.png in Resources */,
+				577162A019001FD800CF2E82 /* left_arrow_pressed.png in Resources */,
+				577162A219001FD800CF2E82 /* right_arrow_pressed.png in Resources */,
+				578D3FBB18DD2250000FC8C1 /* Helicopter-1.png in Resources */,
 				578D3F7218DB3066000FC8C1 /* Main_iPhone.storyboard in Resources */,
+				572384A118DE58CF000CA9EB /* TankSpriteSheet.png in Resources */,
+				577162A319001FD800CF2E82 /* left_arrow.png in Resources */,
 				578D3F6918DB3066000FC8C1 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -255,8 +410,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				578D3F6B18DB3066000FC8C1 /* main.m in Sources */,
+				577162A619003F8300CF2E82 /* PSSwipeZone.m in Sources */,
+				578D3F9918DB30B4000FC8C1 /* PSGameViewController.m in Sources */,
+				578D3FB418DB71BC000FC8C1 /* PSBoulder.m in Sources */,
+				578D3FB718DB73A4000FC8C1 /* PSBonus.m in Sources */,
 				578D3F7818DB3066000FC8C1 /* PSViewController.m in Sources */,
+				578D3F9F18DB6DD2000FC8C1 /* PSScreenElement.m in Sources */,
+				578D3FBD18DD2F95000FC8C1 /* Definitions.m in Sources */,
+				578D3F9C18DB30CC000FC8C1 /* PSGameManager.m in Sources */,
+				578D3FA618DB6E66000FC8C1 /* PSShooter.m in Sources */,
+				578D3FA318DB6E24000FC8C1 /* PSPlayer.m in Sources */,
+				57D1060618FFF8ED00FB8AEF /* PSTapZone.m in Sources */,
 				578D3F6F18DB3066000FC8C1 /* PSAppDelegate.m in Sources */,
+				57D1060A19000C2700FB8AEF /* PSButton.m in Sources */,
+				57D1060318FE2ABA00FB8AEF /* PSTouch.m in Sources */,
+				578D3FA918DB6E8E000FC8C1 /* PSHelicopter.m in Sources */,
+				578D3FB118DB702E000FC8C1 /* PSBomb.m in Sources */,
+				578D3FAE18DB6F7B000FC8C1 /* PSDropper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,6 +564,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ProjectShooter/ProjectShooter-Prefix.pch";
 				INFOPLIST_FILE = "ProjectShooter/ProjectShooter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -407,6 +578,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ProjectShooter/ProjectShooter-Prefix.pch";
 				INFOPLIST_FILE = "ProjectShooter/ProjectShooter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -471,6 +643,7 @@
 				578D3F9218DB3066000FC8C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		578D3F9318DB3066000FC8C1 /* Build configuration list for PBXNativeTarget "ProjectShooterTests" */ = {
 			isa = XCConfigurationList;
@@ -479,6 +652,7 @@
 				578D3F9518DB3066000FC8C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
