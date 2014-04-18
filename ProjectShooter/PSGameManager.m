@@ -41,6 +41,9 @@
 //Array keeps track of all of the touches currently on the screen, stores them in the form of a stack
 @property NSMutableArray *touches;
 
+//A function that either creates a new PSTouch (for a new touch) or fetches a corresponding PSTouch in the touches array
+-(PSTouch*)getPSTouchFromUITouch:(UITouch*)touch;
+
 //These frames get resued, so lets keep them stored in a variable
 @property CGRect leftButtonFrame;
 @property CGRect rightButtonFrame;
@@ -157,10 +160,10 @@
 
 -(void)play{
     self.gameLooper = [NSTimer scheduledTimerWithTimeInterval:FRAMERATE
-                                        target:self
-                                      selector:@selector(gameLoop)
-                                      userInfo:nil
-                                       repeats:YES];
+                                                       target:self
+                                                     selector:@selector(gameLoop)
+                                                     userInfo:nil
+                                                      repeats:YES];
     self.isPaused = NO;
     
     for (PSScreenElement *element in self.screenElements) {
@@ -195,17 +198,16 @@
 
 #pragma mark - Touch Methods
 
-
--(void)registerTouch:(UITouch*)touch{
+-(PSTouch*)getPSTouchFromUITouch:(UITouch*)touch{
     
     PSTouch *pstouch;
-
+    
     switch (touch.phase) {
         case UITouchPhaseBegan:
             pstouch = [[PSTouch alloc] initWithUITouch:touch andGameManager:self];
             [self.touches addObject:pstouch];
             break;
-        
+            
         case UITouchPhaseMoved:
         case UITouchPhaseStationary:
             pstouch = self.touches[[self.touches indexOfObject:touch]];
@@ -218,6 +220,13 @@
             break;
     }
     
+    return pstouch;
+}
+
+-(void)registerTouch:(UITouch*)touch{
+    
+    PSTouch *pstouch = [self getPSTouchFromUITouch:touch];
+    
     for (PSScreenElement *element in self.screenElements) {
         if(element.acceptsTouches){
             //If a touch started in your touchBounds then that is what we register to you
@@ -229,7 +238,7 @@
 
 -(void)swipeRecieved:(PSTouch*)swipe inSwipeZone:(PSSwipeZone*)zone{
     CGVector delta = CGVectorMake(swipe.localDelta.dx, SCREEN_SIZE.height/2);
-    CGFloat deltaDirection = atan2f(delta.dy, delta.dx) - M_PI_2;
+    CGFloat deltaDirection = CGVectorAngle(delta) - M_PI_2;
     self.shooter.direction += deltaDirection;
 }
 

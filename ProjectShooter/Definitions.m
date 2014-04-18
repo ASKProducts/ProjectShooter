@@ -16,6 +16,12 @@ CGFloat CGPointDistance(CGPoint point1, CGPoint point2){
     return sqrtf((point1.x-point2.x)*(point1.x-point2.x) +
                  (point1.y-point2.y)*(point1.y-point2.y) );
 }
+CGFloat CGVectorMagnitude(CGVector v){
+    return sqrtf(v.dx*v.dx+v.dy*v.dy);
+}
+CGFloat CGVectorAngle(CGVector v){
+    return atan2f(v.dy, v.dx);
+}
 
 CGPoint CGPointS(CGPoint p){
     return CGPointMake(CGFloatS_W(p.x),

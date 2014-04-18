@@ -15,6 +15,8 @@ typedef enum{
 }PSPlayerType;
 
 CGFloat CGPointDistance(CGPoint point1, CGPoint point2);
+CGFloat CGVectorMagnitude(CGVector v);
+CGFloat CGVectorAngle(CGVector v);
 
 //Add pause/resume features for CALayers, code copied from Apple
 @interface CALayer (playpause)
