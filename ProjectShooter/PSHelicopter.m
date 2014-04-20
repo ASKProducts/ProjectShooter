@@ -12,6 +12,11 @@
 
 @interface PSHelicopter ()
 
+//Redifitions for readwrite access
+@property NSInteger skillLevel;
+@property CGFloat speed;
+@property CGFloat dropFrequency;
+
 //Simple function thatgenerates a random point in the roaming region
 -(CGPoint)generateNewDestination;
 
@@ -22,7 +27,8 @@
 
 @implementation PSHelicopter{
     BOOL isLeft;
-    CGFloat timeCounter;
+    CGFloat skillLevelTimeCounter;
+    CGFloat dropFrequencyTimeCounter;
 }
 
 -(instancetype)initWithGameManager:(PSGameManager *)gameManager{
@@ -36,9 +42,11 @@
         
         //roaming initialization
         self.speed       = HELICOPTER_STARTING_SPEED;
+        self.dropFrequency = HELICOPTER_STARTING_DROP_FREQUENCY;
         self.destination = self.view.center;
         isLeft           = NO;
-        timeCounter      = 0;
+        skillLevelTimeCounter    = 0;
+        dropFrequencyTimeCounter = 0;
     }
     return self;
 }
@@ -80,15 +88,23 @@
 
 -(void)updateWithDeltaTime:(CGFloat)deltaTime{
     
-    timeCounter += deltaTime;
-    if(timeCounter > HELICOPTER_SKILL_INCREASE_TIME){
+    skillLevelTimeCounter += deltaTime;
+    if(skillLevelTimeCounter > HELICOPTER_SKILL_INCREASE_TIME){
         self.skillLevel++;
-        timeCounter = 0;
+        skillLevelTimeCounter = 0;
         
         self.speed = MIN(HELICOPTER_SKILL_TO_SPEED(self.skillLevel), HELICOPTER_MAX_SPEED);
         
+        self.dropFrequency = MAX(HELICOPTER_SKILL_TO_DROP_FREQUENCY(self.skillLevel), HELICOPTER_MAX_DROP_FREQUENCY);
         //TODO: deal with changing of speed and other variables
         
+    }
+    
+    dropFrequencyTimeCounter += deltaTime;
+    if(dropFrequencyTimeCounter > self.dropFrequency){
+        dropFrequencyTimeCounter = 0;
+        //TODO: implement dropping
+        NSLog(@"Drop! Skill:%d Frequency:%f",self.skillLevel,self.dropFrequency);
     }
 }
 

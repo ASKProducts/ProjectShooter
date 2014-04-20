@@ -13,10 +13,12 @@
 @interface PSHelicopter : PSPlayer 
 
 //Almost all charictaristics (speed, drop frequency, etc) are funtions of the skill level and some random deviation
-@property NSInteger skillLevel;
+@property (readonly) NSInteger skillLevel;
 
 //The (pixels per second) speed in which the helicopter roams
-@property CGFloat speed;
+@property (readonly) CGFloat speed;
+
+@property (readonly) CGFloat dropFrequency;
 
 //The helicopter is constantly wandering from its current location to destination and when it reaches destination is resets destination
 @property CGPoint destination;

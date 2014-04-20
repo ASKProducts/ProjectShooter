@@ -8,8 +8,17 @@
 
 #import "PSDropper.h"
 
+@interface PSDropper ()
+
+@end
 
 @implementation PSDropper
 
+-(void)updateWithDeltaTime:(CGFloat)delta{
+    if(self.isActive){
+        self.view.layer.position = CGPointMake(self.view.center.x,
+                                               self.view.center.y + self.speed*delta);
+    }
+}
 
 @end

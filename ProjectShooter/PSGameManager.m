@@ -126,6 +126,16 @@
                                                      andTouchBounds:PLAYER_SWIPE_ZONE];
     [self addScreenElement:self.aimingSwipeZone];
     
+    
+    PSDropper *d = [[PSDropper alloc] initWithGameManager:self];
+    d.view = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Tank"]];
+    d.view.center = CGPointMake(100, 0);
+    d.isActive = YES;
+    d.speed = 200;
+    [self addScreenElement:d];
+    
+    
+    
 }
 
 #pragma mark - Screen Element Handling
