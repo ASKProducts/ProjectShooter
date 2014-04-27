@@ -9,6 +9,8 @@
 #import "PSShooter.h"
 #import "Definitions.h"
 
+//TODO: email gramdma and papa
+
 @interface PSShooter ()
 
 @property CGFloat timeSinceLastReload;
@@ -25,7 +27,7 @@
         self.view                = [[UIImageView alloc] initWithImage:[UIImage imageNamed:SHOOTER_IMAGE]];
         self.view.bounds         = CGRectMake(0, 0, SHOOTER_SIZE.width, SHOOTER_SIZE.height);
         self.view.center         = CGPointMake(SCREEN_SIZE.width/2,
-                                       SCREEN_SIZE.height - (GROUND_SIZE + SHOOTER_SIZE.height/2));
+                                               SCREEN_SIZE.height - (GROUND_SIZE + SHOOTER_SIZE.height/2));
 
         self.health              = 1;
         self.velocity            = 0;

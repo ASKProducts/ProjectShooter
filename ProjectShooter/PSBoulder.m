@@ -7,8 +7,19 @@
 //
 
 #import "PSBoulder.h"
-
+#import "PSHelicopter.h"
+#import "Definitions.h"
 
 @implementation PSBoulder
+
+-(instancetype)initWithOwner:(PSHelicopter *)owner{
+    self = [super initWithOwner:owner];
+    if (self) {
+        self.view = [[UIImageView alloc] initWithImage:[UIImage imageNamed:BOULDER_IMAGE]];
+        
+        self.view.bounds = CGRectMake(0, 0, 60, 70);
+    }
+    return self;
+}
 
 @end

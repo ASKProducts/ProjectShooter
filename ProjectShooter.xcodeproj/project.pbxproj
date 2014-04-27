@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5708B5FD190806610005B988 /* bomb.png in Resources */ = {isa = PBXBuildFile; fileRef = 5708B5FC190806610005B988 /* bomb.png */; };
+		5708B5FF19080FA90005B988 /* boulder.png in Resources */ = {isa = PBXBuildFile; fileRef = 5708B5FE19080FA90005B988 /* boulder.png */; };
 		5723849F18DDCE31000CA9EB /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5723849E18DDCE31000CA9EB /* QuartzCore.framework */; };
 		572384A118DE58CF000CA9EB /* TankSpriteSheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 572384A018DE58CF000CA9EB /* TankSpriteSheet.png */; };
 		572384A318DE5CC3000CA9EB /* Tank.png in Resources */ = {isa = PBXBuildFile; fileRef = 572384A218DE5CC3000CA9EB /* Tank.png */; };
@@ -58,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5708B5FC190806610005B988 /* bomb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bomb.png; sourceTree = "<group>"; };
+		5708B5FE19080FA90005B988 /* boulder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = boulder.png; sourceTree = "<group>"; };
 		5723849E18DDCE31000CA9EB /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		572384A018DE58CF000CA9EB /* TankSpriteSheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TankSpriteSheet.png; sourceTree = "<group>"; };
 		572384A218DE5CC3000CA9EB /* Tank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tank.png; sourceTree = "<group>"; };
@@ -284,6 +288,8 @@
 				5771629D19001FD800CF2E82 /* right_arrow.png */,
 				5771629E19001FD800CF2E82 /* right_arrow_pressed.png */,
 				5771629F19001FD800CF2E82 /* left_arrow.png */,
+				5708B5FC190806610005B988 /* bomb.png */,
+				5708B5FE19080FA90005B988 /* boulder.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -385,12 +391,14 @@
 				577162A119001FD800CF2E82 /* right_arrow.png in Resources */,
 				572384A318DE5CC3000CA9EB /* Tank.png in Resources */,
 				577162A019001FD800CF2E82 /* left_arrow_pressed.png in Resources */,
+				5708B5FF19080FA90005B988 /* boulder.png in Resources */,
 				577162A219001FD800CF2E82 /* right_arrow_pressed.png in Resources */,
 				578D3FBB18DD2250000FC8C1 /* Helicopter-1.png in Resources */,
 				578D3F7218DB3066000FC8C1 /* Main_iPhone.storyboard in Resources */,
 				572384A118DE58CF000CA9EB /* TankSpriteSheet.png in Resources */,
 				577162A319001FD800CF2E82 /* left_arrow.png in Resources */,
 				578D3F6918DB3066000FC8C1 /* InfoPlist.strings in Resources */,
+				5708B5FD190806610005B988 /* bomb.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,8 @@
 #import "PSPlayer.h"
 #import <QuartzCore/QuartzCore.h>
 
+@class PSDropper;
+
 //The class of the helicopter that roams the top of the screen and drops bombs
 @interface PSHelicopter : PSPlayer 
 
@@ -23,8 +25,8 @@
 //The helicopter is constantly wandering from its current location to destination and when it reaches destination is resets destination
 @property CGPoint destination;
 
-//Starts the animation/motion process
--(void)startMotion;
-
+//The functions for manupilating the droppers fo this helicopter
+-(void)drop:(PSDropper*)dropper;
+-(void)removeDropper:(PSDropper*)dropper;
 
 @end

@@ -95,8 +95,7 @@
     
     self.helicopter = [[PSHelicopter alloc] initWithGameManager:self];
     [self addScreenElement:self.helicopter];
-    
-    [self.helicopter startMotion];
+
     
     self.leftButton = [[PSButton alloc] initWithGameManager:self
                                                 andReciever:self
@@ -126,13 +125,6 @@
                                                      andTouchBounds:PLAYER_SWIPE_ZONE];
     [self addScreenElement:self.aimingSwipeZone];
     
-    
-    PSDropper *d = [[PSDropper alloc] initWithGameManager:self];
-    d.view = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"Tank"]];
-    d.view.center = CGPointMake(100, 0);
-    d.isActive = YES;
-    d.speed = 200;
-    [self addScreenElement:d];
     
     
     
@@ -189,7 +181,8 @@
     NSTimeInterval delta = (self.previousTime) ? now - self.previousTime : FRAMERATE;
     
     //call update to all screenElements
-    for (PSScreenElement *element in self.screenElements) {
+    NSArray *elements = self.allScreenElements;
+    for (PSScreenElement *element in elements) {
         [element updateWithDeltaTime:delta];
     }
     
@@ -200,7 +193,6 @@
         self.shooter.velocity = SHOOTER_SPEED;
     else
         self.shooter.velocity = 0;
-    
     
     //TODO: add rest of gameLoop
 }

@@ -7,7 +7,23 @@
 //
 
 #import "PSBomb.h"
+#import "Definitions.h"
+#import "PSHelicopter.h"
 
 @implementation PSBomb
+
+-(instancetype)initWithOwner:(PSHelicopter *)owner{
+    self = [super initWithOwner:owner];
+    if (self) {
+        self.view = [[UIImageView alloc] initWithImage:[UIImage imageNamed:BOMB_IMAGE]];
+        
+        //TODO: add system where, as skill gets higher, bigger bombs become more likely
+        self.size = owner.skillLevel;
+        CGSize physicalSize = BOMB_PHYSICAL_SIZE(15);
+        self.view.bounds = CGRectMake(0, 0, physicalSize.width, physicalSize.height);
+
+    }
+    return self;
+}
 
 @end

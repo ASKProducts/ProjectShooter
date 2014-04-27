@@ -13,8 +13,7 @@
 
 //When a bomb of size X is shot, one bomb of size X-1 or two bombs of size X-2 appear. When A bomb of size 1 is shot, it disappears.
 //A bomb of size X has a physical size of BOMB_PHYSICAL_SIZE(X)
-//TODO: add BOMB_PHYSICAL_SIZE
-//TODO: build PSBomb
+
 @property NSInteger size;
 
 @end

@@ -59,6 +59,9 @@ CGRect CGRectS_H(CGRect r);
 
 #define FRAMERATE (1.0f/30.0f)
 
+//measured in pixels per second per second
+#define GRAVITY CGFloatS_H(200.0)
+#define GRAVITY_DEVIATION CGFloatS_H(40.0)
 
 #pragma mark - UI
 
@@ -117,14 +120,36 @@ SCREEN_SIZE.width-(DIRECTION_BUTTON_SIZE.width + SHOOTER_SIZE.width/2)*2)
 
 #define HELICOPTER_STARTING_DROP_FREQUENCY (3.0)
 
-#define HELICOPTER_MAX_DROP_FREQUENCY (0.6)
+#define HELICOPTER_MAX_DROP_FREQUENCY (0.4)
 
 //Amount of seconds it takes for PSHelicopter.speed to increase by 1
-#define HELICOPTER_SKILL_INCREASE_TIME 5
+#define HELICOPTER_SKILL_INCREASE_TIME 6
 
-#define HELICOPTER_SKILL_TO_SPEED_(skill) (skill*(4)+HELICOPTER_STARTING_SPEED_)
+#define HELICOPTER_SKILL_TO_SPEED_(skill) (skill*(3)+HELICOPTER_STARTING_SPEED_)
 #define HELICOPTER_SKILL_TO_SPEED(skill)  CGFloatS_W(HELICOPTER_SKILL_TO_SPEED_(skill))
 
 #define HELICOPTER_SKILL_TO_DROP_FREQUENCY(skill) (HELICOPTER_STARTING_DROP_FREQUENCY-skill*(0.05))
+
+#pragma mark - Droppers
+
+#define DROPPER_CLASSES         @[[PSBomb class], [PSBoulder class], [PSBonus class]]
+#define DROPPER_PROBABILITIES   @[@3            , @1               , @0]
+#define DROPPER_PROBABILITY_SUM 4
+
+
+#pragma mark - Bombs
+
+#define BOMB_IMAGE @"bomb.png"
+#define BOMB_HELICOPTER_SKILL_TO_SIZE(x) //TODO: build BOMB_HELICOPTER_SKILL_TO_SIZE
+
+#define BOMB_STARTING_SIZE CGSizeS_H(CGSizeMake(10,10))
+#define BOMB_PHYSICAL_SIZE(x) CGSizeMake(BOMB_STARTING_SIZE.width * (powf(1.1,x)), BOMB_STARTING_SIZE.height * (powf(1.1,x)))
+
+
+#pragma mark - Boulder
+
+#define BOULDER_IMAGE @"boulder.png"
+
+//TODO: build boulder size functions
 
 #endif
